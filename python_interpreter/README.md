@@ -162,3 +162,21 @@ if __name__ == '__main__':
     args = sys.argv
     interactive_module_function(args[1])
 ```
+
+# Source Code Encoding
+By default, Python source files are treated as encoded in `UTF-8`. 
+
+* To declare an encoding other than the default one, a special comment line should be added as the first line of the file.
+  * When encoding is one of the valid codecs supported by Python
+    ```text
+    # -*- coding: encoding -*-
+    ```
+  * to declare that Windows-1252 encoding is to be used
+    ```text
+    # -*- coding: cp1252 -*-
+    ```
+* when the source code starts with a UNIX `“shebang”` line the encoding declaration should be added as the second line of the file.
+  ```text
+  #!/usr/bin/env python3
+  # -*- coding: cp1252 -*-
+  ```
