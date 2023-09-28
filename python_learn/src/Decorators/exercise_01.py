@@ -2,7 +2,7 @@
 #   that decorates functions with one argument.
 # The factory should take one argument, a type,
 #   and then returns a decorator that makes function
-#   should check if the input is the correct type.
+#       that should check if the input is the correct type.
 #   If it is wrong, it should print("Bad Type")
 #   Using isinstance(object, type_of_object) or type(object) might help.
 

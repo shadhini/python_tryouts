@@ -3,9 +3,9 @@ import random
 
 # Generator
 def lottery():
-    # returns 6 numbers between 16 and 40
+    # returns 6 numbers between 100 and 200
     for i in range(6):
-        yield random.randint(16, 40)
+        yield random.randint(100, 200)
 
     # returns a 7th number between 1 and 15
     yield random.randint(1, 15)
